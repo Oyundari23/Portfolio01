@@ -28,7 +28,7 @@ export function Hero() {
                 </div>
             </div>
             <div>
-                <div className=" w-[440px] h-[360px] relative">
+                <div className=" w-[440px] h-[360px] relative ml-[160px]">
                     <Image src="/Pic.png" width={280} height={320} />
                     <div className=" absolute bg-slate-300 w-[280px] h-[320px] top-8 -z-50 left-8 ">
                 </div>
