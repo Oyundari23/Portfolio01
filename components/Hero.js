@@ -1,9 +1,23 @@
 import { IoLocationOutline } from "react-icons/io5";
 
-import { LuGithub } from "react-icons/lu";
-import { LuTwitter } from "react-icons/lu";
-import { LuFigma } from "react-icons/lu";
+import { LuGithub, LuTwitter, LuFigma } from "react-icons/lu";
 import Image from "next/image";
+import Link from "next/link";
+
+const socialLinks = [
+    {
+        link: "/github",
+        Icon: LuGithub,
+    },
+    {
+        link: "/twitter",
+        Icon: LuTwitter,
+    },
+    {
+        link: "/figma",
+        Icon: LuFigma,
+    },
+];
 
 export function Hero() {
     return (
@@ -14,17 +28,19 @@ export function Hero() {
                     <p>I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-3"><IoLocationOutline /><p>Ahmedabad, India</p></div>
-                    <div className="flex items-center gap-3 ml-1">
+                    <div className="flex items-center gap-3"><IoLocationOutline className="w-6 h-6"/><p>Ahmedabad, India</p></div>
+                    <div className="flex items-center gap-3 ml-2">
                         <div className="bg-[#10B981] w-[8px] h-[8px] rounded-md">
                         </div>
-                        <p>Available for new projects</p>
+                        <p>    Available for new projects</p>
                     </div>
                 </div>
                 <div className="flex gap-4 ">
-                    <div><LuGithub /></div>
-                    <div><LuTwitter /></div>
-                    <div><LuFigma /></div>
+                    {socialLinks.map(({link, Icon }) => (
+                        <Link key={link} href={link}>
+                            <Icon className="w-8 h-8"/>
+                        </Link>
+                    ))}
                 </div>
             </div>
             <div>
