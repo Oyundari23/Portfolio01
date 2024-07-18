@@ -21,7 +21,7 @@ const socialLinks = [
 
 export function Hero() {
     return (
-        <div className="w-[1440px] h-[552px] justify-between px-[96px] py-[80px] flex">
+        <div className="w-[1440px] h-[552px] justify-between px-[96px] py-[80px] flex gap-10">
             <div className="flex flex-col gap-[48px] w-[768px] h-[360px] text-justify">
                 <div>
                     <p className="text-[60px]">Hi, I'm Sagar</p>
@@ -44,7 +44,7 @@ export function Hero() {
                 </div>
             </div>
             <div>
-                <div className=" w-[440px] h-[360px] relative ml-[160px]">
+                <div className="h-[360px] relative ml-[160px]">
                     <Image src="/Pic.png" width={280} height={320} />
                     <div className=" absolute bg-slate-300 w-[280px] h-[320px] top-8 -z-50 left-8 ">
                 </div>
