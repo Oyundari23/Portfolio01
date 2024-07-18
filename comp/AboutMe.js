@@ -8,7 +8,7 @@ export function AboutMe() {
                 About me
             </div>
             <div>
-                <div className="h-[694px]  w-[1216px] gap-[48px] flex">
+                <div className="h-[694px] w-[1216px] gap-[48px] flex">
                     <div className="ml-[40px] relative z-50 w-[584px] h-[694p]">
                         <Image src="/images/aboutme.png" width={400} height={480} />
                         <div className="bg-slate-200 h-[480px] absolute w-[400px] top-10 -z-50 ">
