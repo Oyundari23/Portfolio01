@@ -37,7 +37,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <div className="w-[1440px] h-[560px] px-[96px] py-[80px] flex flex-col gap-[48px] ">
+    <div className="w-[1440px] mx-auto h-[560px] px-[96px] py-[80px] flex flex-col gap-[48px] ">
       <div className="flex items-center justify-center mb-12 w-[105px] h-[28px] bg-gray-200 rounded-lg">
         Skills
       </div>

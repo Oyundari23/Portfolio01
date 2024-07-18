@@ -4,7 +4,7 @@ import { IoSunnyOutline } from "react-icons/io5";
 
 export function Header() {
     return (
-        <div className="h-[68px] w-[1440px] px-[80px] py-[16px] flex justify-between">
+        <div className="h-[68px] mx-auto w-[1440px] px-[80px] py-[16px] flex justify-between">
             <div className="font-[700] text-3xl ">{`<SS />`}
             </div>
             <div className="flex w-[554px] h-[36px] gap-[24px] items-center">

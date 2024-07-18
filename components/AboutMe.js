@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function AboutMe() {
     return (
-        <div className="bg-slate-100 h-[962px] w-[1440px] py-[80px] px-[96px]">
+        <div className="bg-slate-100 mx-auto h-[962px] w-[1440px] py-[80px] px-[96px]">
             <div className="flex items-center justify-center mb-12 w-[105px] h-[28px] bg-gray-200 rounded-lg">
                 About me
             </div>
