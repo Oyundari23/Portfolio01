@@ -1,7 +1,7 @@
 import { AboutMe } from "@/components/AboutMe"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
-import { Work } from "@/components/Work"
+import { Works } from "@/components/Work"
  
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <AboutMe/>
-      <Work/>
+      <Works/>
     </main>
   );
 }
