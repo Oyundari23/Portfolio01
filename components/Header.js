@@ -12,15 +12,15 @@ export function Header() {
         </div>
       </div>
 
-      <div className="flex w-[554px] h-[36px] gap-[24px] items-center">
-        <p className="hidden md:block">About</p>
-        <p className="hidden md:block">Work</p>
-        <p className="hidden md:block">Testimonials</p>
-        <p className="hidden md:block">Contact</p>
+      <div className="flex gap-[24px] items-center">
+        <p className="hidden lg:block">About</p>
+        <p className="hidden lg:block">Work</p>
+        <p className="hidden lg:block">Testimonials</p>
+        <p className="hidden lg:block">Contact</p>
         <p className=" flex h-[36px] w-[36px] items-center ">
           <IoSunnyOutline />
         </p>
-        <div className=" sm:hidden lg:block flex items-center w-[136px] h-[36px] rounded-[12px] px-[16px] py-[6px] bg-slate-950 text-white">
+        <div className=" hidden lg:block flex items-center w-[136px] h-[36px] rounded-[12px] px-[16px] py-[6px] bg-slate-950 text-white">
           <p>Download CV</p>
         </div>
       </div>

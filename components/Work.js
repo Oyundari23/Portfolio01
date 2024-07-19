@@ -35,12 +35,19 @@ const worksData = [
         link: "/",
         tags: ["React", "Next", "Node", "Tailwindcss", "Figma", "Git", "PostgreSQL", "Cypress", "Typescript", "Storybook"],
     }, 
+    {
+        title: "Fiskil-2",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        image: "skills/work.png",
+        link: "/",
+        tags: ["React", "Next", "Node", "Tailwindcss", "Figma", "Git", "PostgreSQL", "Cypress", "Typescript", "Storybook"],
+    }, 
 ];
 
 export function Works () {
     return (
      <div className="max-w-6xl mx-auto">
-        <div className="flex justify-center mb-5 gap-4">
+        <div className="flex justify-center mb-5 gap-4 mt-4">
           <Tag name="Work"/>
         </div>
         <div className="text-center mb-10">
@@ -59,11 +66,11 @@ export function Works () {
 
 function WorkCard({ isReverse = false, work }) {
     return (
-        <div className={`mb-4 rounded-lg shadow md:flex ${isReverse ? "md:flex-row-reverse" : ""}`}>
-            <div className="px-8 py-8 md:flex-1 bg-slate-100">
+        <div className={` mb-4 rounded-lg shadow md:flex ${isReverse ? "md:flex-row-reverse" : ""}`}>
+            <div className="px-12 py-12 md:flex-1 bg-slate-100">
                 <Image src="/skills/work.png" width={240} height={280} className="w-full rounded-lg shadow"/>
             </div>
-            <div className="px-8 py-8 flex flex-col gap-4 md:flex-1">
+            <div className="px-12 py-12 flex flex-col gap-4 md:flex-1">
                 <div className="mb-2 font-bold">
                     {work.title}
                 </div>

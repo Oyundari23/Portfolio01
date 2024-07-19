@@ -3,18 +3,16 @@ import Image from "next/image";
 
 export function AboutMe() {
     return (
-        <div className="bg-slate-100 mx-auto h-[962px] w-[1440px] py-[80px] px-[96px]">
-            <div className="flex items-center justify-center mb-12 w-[105px] h-[28px] bg-gray-200 rounded-lg">
-                About me
-            </div>
-            <div>
-                <div className="h-[694px]  w-[1216px] gap-[48px] flex">
-                    <div className="ml-[40px] relative z-50 w-[584px] h-[694p]">
-                        <Image src="/images/aboutme.png" width={400} height={480} />
-                        <div className="bg-slate-200 h-[480px] absolute w-[400px] top-10 -z-50 ">
-                        </div>
+        <div className=" max-w-6xl mx-auto flex flex-col gap-5 py-[80px] px-[96px]">
+            <div className="flex-row justify-center rounded-xl bg-slate-300 mb-5 gap-4 mt-4">
+              About me
+                <div className=" gap-[48px] flex flex-col lg:flex-row">
+                    <div className="ml-[40px] relative z-50 flex lg:my-auto ">
+                        <Image src="/skills/aboutme.png" width={280} height={360} />
+                        {/* <div className="bg-slate-200 h-[480px] absolute w-[400px] top-10 -z-50 ">
+                        </div> */}
                     </div>
-                    <div className=" flex flex-col w-[584px] h-[694px] gap-4 text-justify">
+                    <div className=" flex flex-col flex-1 gap-4 text-justify items-center py-4 px-4">
                         <p className="text-3xl">
                             Curious about me? Here you have it:
                         </p>
@@ -35,6 +33,7 @@ export function AboutMe() {
                         </p>
                     </div>
                 </div>
+
             </div>
         </div>
     );
