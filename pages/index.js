@@ -5,7 +5,7 @@ import { Works } from "@/components/Work"
  
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-white flex flex-col">
       <Header/>
       <Hero/>
       <AboutMe/>
