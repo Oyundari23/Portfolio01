@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function AboutMe() {
     return (
-        <div className="max-w-6xl mx-auto flex flex-col bg-slate-100 gap-3 py-[80px] px-[96px] mt-10">
-            <div className="flex justify-center rounded-xl bg-slate-300 flex-wrap text-center px-4 py-1 mb-5 gap-4 mt-4">
-                About me
+        <div className=" max-w-6xl mx-auto flex flex-col bg-slate-100 gap-3 py-[80px] px-[96px] mt-10">
+            <div className="flex justify-center mb-5 gap-4 mt-4">
+                <Header name="About me" />
             </div>
             <div className=" gap-[60px] flex flex-col lg:flex-row">
                 <div className="ml-[40px] relative z-50 flex lg:my-auto justify-center">
@@ -36,4 +36,7 @@ export function AboutMe() {
             </div>
         </div>
     );
+}
+function Header ({ name }) {
+    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }

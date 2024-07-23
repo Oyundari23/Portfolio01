@@ -70,9 +70,9 @@ const skills = [
 export function Skills () {
   return (
     <div className="max-w-6xl mx-auto px-[16px] py-[64px] gap-[36px] flex flex-col ">
-      <div className="flex justify-center  bg-gray-200 rounded-lg">
-        Skills
-      </div>
+      <div className="flex justify-center mb-5 gap-4 mt-4">
+                <Header name="Skills" />
+            </div>
       <div className="text-center">The skills, tools and tech I am really good at:</div>
       <div className="">
         <div className="grid grid-cols-3 gap-10 lg:grid-cols-8">
@@ -86,4 +86,8 @@ export function Skills () {
       </div>     
     </div>
   );
+}
+
+function Header ({ name }) {
+  return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }

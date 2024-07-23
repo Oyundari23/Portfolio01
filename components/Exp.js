@@ -25,7 +25,8 @@ const experiences = [
 export function Exp() {
     return (
         <div className="max-w-6xl mx-auto px-[16px] flex flex-col gap-8  py-[64px] bg-slate-50">
-            <div className="flex justify-center w-[105px] h-[28px] bg-gray-200 rounded-lg">Experience
+            <div className="flex justify-center mb-5 gap-4 mt-4">
+                <Header name="Experience" />
             </div>
             <div className="text-center">Here is a quick summary of my most recent experiences:</div>
             <div className="flex flex-col gap-0 rounded-lg bg-slate-100">
@@ -44,4 +45,7 @@ export function Exp() {
         </div>
     );
 }
+function Header ({ name }) {
+    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+  }
 
