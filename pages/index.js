@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
-    <main className="bg-white flex flex-col">
+    <main className="bg-slate-50 dark:bg-black">
       <Header />
       <Hero />
       <AboutMe />

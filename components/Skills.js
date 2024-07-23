@@ -75,7 +75,7 @@ export function Skills () {
             </div>
       <div className="text-center">The skills, tools and tech I am really good at:</div>
       <div className="">
-        <div className="grid grid-cols-3 gap-10 lg:grid-cols-8">
+        <div className="grid grid-cols-3 gap-10 lg:grid-cols-8 px-[100px]">
           {skills.map((skill) => (
             <div key={skill.name}>
               <Image src={skill.imagePath} width={40} height={40} />
@@ -89,5 +89,5 @@ export function Skills () {
 }
 
 function Header ({ name }) {
-  return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+  return <div className="bg-slate-200 dark:bg-slate-600 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }

@@ -24,9 +24,9 @@ export function Hero() {
 
             <div className="flex flex-col gap-10 max-w-6xl mx-auto justify-between px-[96px] py-[80px] lg:flex-row-reverse">
                 <div>
-                    <div className="flex justify-center h-[343px] w-[340px]">
+                    <div className="flex justify-center lg:h-[320px] lg:w-[280px]">
                         <Image src="/Pic.png" width={280} height={320} />
-                        <div className=" absolute bg-slate-300 w-[280px] h-[320px] top-8 -z-50 left-8 "></div>
+                        {/* <div className=" absolute bg-slate-300 w-[280px] h-[320px] top-8 -z-50 left-8 "></div> */}
                     </div>
                 </div>
                 <div className="flex flex-col gap-10">
@@ -51,10 +51,5 @@ export function Hero() {
                     </div>
                 </div>
             </div>
-
-        
-
-
-
     );
 }

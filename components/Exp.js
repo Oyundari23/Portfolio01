@@ -24,14 +24,14 @@ const experiences = [
 
 export function Exp() {
     return (
-        <div className="max-w-6xl mx-auto px-[16px] flex flex-col gap-8  py-[64px] bg-slate-50">
+        <div className="max-w-6xl mx-auto px-[16px] dark:bg-slate-900 flex flex-col gap-8 lg:px-[96px] py-[64px] bg-slate-50">
             <div className="flex justify-center mb-5 gap-4 mt-4">
                 <Header name="Experience" />
             </div>
             <div className="text-center">Here is a quick summary of my most recent experiences:</div>
-            <div className="flex flex-col gap-0 rounded-lg bg-slate-100">
+            <div className="flex flex-col gap-2 ">
                 {experiences.map((experience) => (
-                    <div className=" flex flex-col  px-[32px] py-[32px] justify-between gap-[24px] lg:flex-row lg:gap-8" key={experience.company}>
+                    <div className=" flex flex-col mb-8 px-[32px] rounded-lg dark:bg-slate-950 bg-slate-100 py-[32px] justify-between gap-[24px] lg:flex-row lg:gap-8" key={experience.company}>
                         <div className=""><Image src={experience.imagePath} width={102} height={28} /></div>
                         <div className=" flex flex-col gap-8 lg:flex-row-reverse">
                             <div>{experience.timeline}</div>
@@ -46,6 +46,6 @@ export function Exp() {
     );
 }
 function Header ({ name }) {
-    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+    return <div className="bg-slate-200 dark:bg-slate-600 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
   }
 

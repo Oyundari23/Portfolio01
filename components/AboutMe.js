@@ -3,15 +3,14 @@ import Image from "next/image";
 
 export function AboutMe() {
     return (
-        <div className=" max-w-6xl mx-auto flex flex-col bg-slate-100 gap-3 py-[80px] px-[96px] mt-10">
+        <div className=" max-w-6xl mx-auto flex flex-col bg-slate-100 gap-3 py-[80px] px-[96px] mt-10 bg-slate-50 dark:bg-slate-900">
             <div className="flex justify-center mb-5 gap-4 mt-4">
                 <Header name="About me" />
             </div>
             <div className=" gap-[60px] flex flex-col lg:flex-row">
-                <div className="ml-[40px] relative z-50 flex lg:my-auto justify-center">
+                <div className=" relative z-50 flex lg:my-auto justify-center">
                     <Image src="/skills/aboutme.png" width={280} height={360} />
-                    {/* <div className="bg-slate-200 h-[480px] absolute w-[400px] top-10 -z-50 ">
-                        </div> */}
+                  
                 </div>
                 <div className=" flex flex-col flex-1 gap-4 text-justify items-center py-4 px-4">
                     <p className="text-3xl">
@@ -38,5 +37,5 @@ export function AboutMe() {
     );
 }
 function Header ({ name }) {
-    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+    return <div className="bg-slate-200 dark:bg-slate-600 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }

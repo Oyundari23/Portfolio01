@@ -46,7 +46,7 @@ const worksData = [
 
 export function Works () {
     return (
-     <div className="max-w-6xl mx-auto">
+     <div className="max-w-6xl mx-auto px-[16px] py-[64px] lg:px-[96px]">
         <div className="flex justify-center mb-5 gap-4 mt-4">
           <Tag name="Work"/>
         </div>
@@ -67,7 +67,7 @@ export function Works () {
 function WorkCard({ isReverse = false, work }) {
     return (
         <div className={` lg-4 rounded-lg shadow lg:flex ${isReverse ? "lg:flex-row-reverse" : ""}`}>
-            <div className="px-12 py-12 lg:flex-1 bg-slate-100  ">
+            <div className="px-12 py-12 lg:flex-1 bg-slate-100 dark:bg-slate-900">
                 <Image src="/skills/work.png" width={240} height={280} className="w-full rounded-lg shadow "/>
             </div>
             <div className="px-12 py-12 flex flex-col gap-4 md:flex-1">
@@ -88,7 +88,7 @@ function WorkCard({ isReverse = false, work }) {
     );
 }
 function Tag ({ name }) {
-    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+    return <div className="bg-slate-200 dark:bg-slate-600 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }
 
 

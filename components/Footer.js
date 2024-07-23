@@ -25,7 +25,7 @@ const socialLinks = [
 
 export function Footer() {
     return (
-        <div className="max-w-6xl mx-auto px-[16px] py-[64px flex flex-col gap-6]">
+        <div className="max-w-6xl mx-auto  py-[64px] flex flex-col gap-6] lg:px-[96px] mb-8">
             <div className="flex justify-center mb-5 gap-4 mt-4">
                 <Header name="Get in touch" />
             </div>
@@ -52,9 +52,9 @@ export function Footer() {
                     ))}
                 </div>
             </div>
-            <div className="bg-slate-100 flex gap-8 max-w-6xl mx-auto mt-5"> 
-                  <div>2023</div>
-                  <div>Designed and coded by Sagar Shah</div>
+            <div className="bg-slate-100 dark:bg-slate-800 block gap-8 text-center mt-5"> 
+                  <div>2023   Designed and coded by Sagar Shah</div>
+                 
             </div>
         </div>
         
@@ -64,7 +64,7 @@ export function Footer() {
 
 
 function Header ({ name }) {
-    return <div className="bg-slate-200 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
+    return <div className="bg-slate-200 dark:bg-slate-600 flex flex-wrap text-center rounded-xl px-4 py-1">{name}</div>;
 }
 
 
