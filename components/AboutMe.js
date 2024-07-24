@@ -9,7 +9,7 @@ export function AboutMe() {
             </div>
             <div className=" gap-[60px] flex flex-col lg:flex-row">
                 <div className=" flex lg:my-auto justify-center">
-                    <Image src="/skills/aboutme.png" width={280} height={360} />
+                    <Image src="/Skills/aboutme.png" width={280} height={360} />
                   
                 </div>
                 <div className=" flex flex-col flex-1 gap-4 text-justify items-center py-4 px-4">
