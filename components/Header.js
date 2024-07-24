@@ -43,7 +43,7 @@ export function Header() {
         <div className=" flex justify-between">
           <div className="font-[700] text-3xl">{`<SS />`}</div>
           <div>
-            <FiMenu className="w-8 h-8 lg:hidden" onClick={openMenu}/>
+            <FiMenu className="w-8 h-8 hidden lg:block" onClick={openMenu}/>
           </div>
         </div>
 
