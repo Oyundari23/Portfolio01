@@ -8,7 +8,7 @@ export function AboutMe() {
                 <Header name="About me" />
             </div>
             <div className=" gap-[60px] flex flex-col lg:flex-row">
-                <div className=" relative z-50 flex lg:my-auto justify-center">
+                <div className=" flex lg:my-auto justify-center">
                     <Image src="/skills/aboutme.png" width={280} height={360} />
                   
                 </div>
