@@ -68,7 +68,7 @@ function WorkCard({ isReverse = false, work }) {
     return (
         <div className={` lg-4 rounded-lg shadow lg:flex ${isReverse ? "lg:flex-row-reverse" : ""}`}>
             <div className="px-12 py-12 lg:flex-1 bg-slate-100 dark:bg-slate-900">
-                <Image src="/skills/work.png" width={240} height={280} className="w-full rounded-lg shadow "/>
+                <Image src="/Skills/work.png" width={240} height={280} className="w-full rounded-lg shadow "/>
             </div>
             <div className="px-12 py-12 flex flex-col gap-4 md:flex-1">
                 <div className="mb-2 font-bold">
