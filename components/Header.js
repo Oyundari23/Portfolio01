@@ -28,7 +28,7 @@ const navigations = [
 ];
 
 export function Header() {
-  let [open, setOpen] = useState(true);
+  let [open, setOpen] = useState(false);
 
   function openMenu() {
     setOpen(true);
@@ -43,7 +43,7 @@ export function Header() {
         <div className=" flex justify-between">
           <div className="font-[700] text-3xl">{`<SS />`}</div>
           <div>
-            <FiMenu className="w-8 h-8 hidden lg:block" onClick={openMenu}/>
+            <FiMenu className="w-8 h-8 lg:hidden" onClick={openMenu}/>
           </div>
         </div>
 
